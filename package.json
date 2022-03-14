@@ -1,0 +1,22 @@
+{
+  "name": "cafeteria",
+  "version": "1.0.0",
+  "description": "proyecto web con sass y gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perman03/Cafepoesia.git"
+  },
+  "author": "Franco Perez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perman03/Cafepoesia/issues"
+  },
+  "homepage": "https://github.com/perman03/Cafepoesia#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
