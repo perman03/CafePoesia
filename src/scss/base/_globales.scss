@@ -1,0 +1,12 @@
+@use 'variables' as v;   //importamos variables del archivo de variables y cambia nombre de variables a v 
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: v.$fuente_principal;
+}
