@@ -1,2 +1,6 @@
 //El guion bajo significa que el archivo será incluido en otro
+@use '../base/variables' as v;
 
+.header{
+    color: v.$negro;
+}
