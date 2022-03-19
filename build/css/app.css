@@ -387,3 +387,11 @@ h2 {
 h3 {
   font-size: 3.2rem;
 }
+
+.bg-primario {
+  background-color: #e8505b;
+}
+
+.text-center {
+  text-align: center;
+}
