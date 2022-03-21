@@ -5,6 +5,8 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer'); 
 //Dependencias para minificar imagenes
 const imagemin = require('gulp-imagemin');
+const webp = require('gulp-webp'); 
+const avif = require('gulp-avif'); 
 
 // Declarar tarea
 function css (done) {
@@ -32,6 +34,29 @@ function imagenes(done){
     done(); 
 }
 
+//tarea para convertir imagenes a .WEBP
+function versionWebp(done){
+    
+    src('src/img/**/*.{png,jpg}')                                 //extensiones sin espacio
+        .pipe( webp() )
+        .pipe(dest ('./build/img'))
+    
+    done(); 
+}
+
+//tarea para convertir imagenes a .AVIF
+function versionAvif(done){
+    
+    const opciones = {
+        quality: 50
+    }
+    src('src/img/**/*.{png,jpg}')                                 //extensiones sin espacio
+        .pipe( avif(opciones) )
+        .pipe(dest ('./build/img'))
+    
+    done(); 
+}
+
 //tarea controlador autoguardado
 function dev(){
     watch('src/scss/**/*.scss', css);          //permite compilar todos los archivos con terminacion scss
@@ -45,9 +70,12 @@ function tareaDefault(){
 
 //Permitir llamado de tarea
 exports.css = css; 
-exports.dev = dev; 
-exports.default = series(imagenes, css, dev);
-exports.imagenes = imagenes; 
+exports.dev = dev;
+exports.imagenes = imagenes;
+exports.versionWebp = versionWebp;
+exports.versionAvif = versionAvif; 
+exports.default = series(imagenes, versionWebp, versionAvif, css, dev);
+
 
 //series - Se inicia una tarea y hasta que finaliza se inicia otra
 //parallel - Todas inician al mismo tiempo
