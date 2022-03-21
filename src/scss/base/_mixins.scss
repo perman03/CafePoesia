@@ -1,0 +1,21 @@
+//Una forma excelente de reutilizar codigo
+
+@use 'variables' as v;
+
+@mixin mobile {
+    @media(min-widht: v.$mobile ){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media(min-width: v.$tablet){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media(min-width: v.$desktop){
+        @content;
+    }
+}

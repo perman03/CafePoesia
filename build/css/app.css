@@ -401,5 +401,24 @@ h3 {
 }
 
 .header {
-  color: #000000;
+  padding: 5rem 0;
+  position: relative;
+}
+.header::before {
+  content: "";
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+.header .contenido-header {
+  margin-top: 5rem;
+  position: relative;
+}
+
+.header-inicio {
+  background-image: url(/build/img/header_inicio.jpg);
 }
