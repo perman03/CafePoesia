@@ -4,16 +4,28 @@
 .nav-principal{
     display: flex;
     flex-direction: column;
+    margin-top: 5rem;
     @include mx.tablet { 
         flex-direction: row;
-     }
+        gap: 1rem;
+        margin-top: 0;
+    
+    }
 
     a{
         text-align: center;
         color: v.$blanco;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        font-weight: 700;
 
         &:hover{
-            color: v.$primario;
+            color: v.$secundario;
+        }
+
+        &:activo{
+            color: v.$secundario; 
         }
     }
 }

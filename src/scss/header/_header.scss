@@ -6,6 +6,11 @@
 .header{
     padding: 5rem 0;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mx.tablet { 
+        min-height: 70rem; 
+     }
 
     
  
@@ -21,11 +26,15 @@
     }
 
     .contenido-header{
-        margin-top: 5rem;
         position: relative;
         h1{
             text-align: center;
-            color: v.$blanco; 
+            color: v.$blanco;
+            text-transform: uppercase; 
+            margin: 5rem 0rem; 
+            @include mx.tablet { 
+                margin-top: 10rem;
+             }
         }
     }
 }
