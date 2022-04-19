@@ -58,24 +58,20 @@ function versionAvif(done){
 }
 
 //tarea controlador autoguardado
-function dev(){
-    watch('src/scss/**/*.scss', css);          //permite compilar todos los archivos con terminacion scss
-    watch('src/img/**/*', imagenes); 
+function dev(done) {
+    watch( 'src/scss/**/*.scss', css );
+    watch( 'src/img/**/*', imagenes );
+
+    done(); 
 }
 
-function tareaDefault(){
-    console.log('soy una tarea default');   
-}
 
-
-//Permitir llamado de tarea
-exports.css = css; 
-exports.dev = dev;
+exports.css = css;
+exports.dev = dev; 
 exports.imagenes = imagenes;
 exports.versionWebp = versionWebp;
-exports.versionAvif = versionAvif; 
+exports.versionAvif = versionAvif;
 exports.default = series(imagenes, versionWebp, versionAvif, css, dev);
 
-
-//series - Se inicia una tarea y hasta que finaliza se inicia otra
-//parallel - Todas inician al mismo tiempo
+// series - Se inicia una tarea, y hasta que finaliza, inicia la siguiente
+// parallel - Todas inician al mismo tiempo

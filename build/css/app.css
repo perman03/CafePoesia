@@ -431,6 +431,10 @@ h3 {
   margin-top: 5rem;
   position: relative;
 }
+.header .contenido-header h1 {
+  text-align: center;
+  color: #ffffff;
+}
 
 .header-inicio {
   background-image: url(/build/img/header_inicio.jpg);

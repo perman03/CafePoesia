@@ -23,6 +23,10 @@
     .contenido-header{
         margin-top: 5rem;
         position: relative;
+        h1{
+            text-align: center;
+            color: v.$blanco; 
+        }
     }
 }
 
