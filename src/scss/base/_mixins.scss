@@ -19,3 +19,10 @@
         @content;
     }
 }
+
+//mixin para grid('numero de columnas','gap o espaciado'
+@mixin grid ($columnas, $gap ) {
+    display: grid; 
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5rem;
+}

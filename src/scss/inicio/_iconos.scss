@@ -1,0 +1,31 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as mx; 
+
+.iconos{
+    margin-top: 5rem;
+
+    .listado-iconos{
+
+        //tres columnas para web
+        @include mx.tablet { 
+            @include mx.grid(3, 2rem)
+         }
+       
+        
+    li{
+
+        img{
+        margin: 0 auto;
+        width: 12rem;
+        }
+
+        p{
+        font-family: v.$fuente_cursiva;
+        color: v.$primario;
+        font-size: 3.2rem;
+        }
+
+       }
+    }
+
+}
