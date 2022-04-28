@@ -23,6 +23,6 @@
 //mixin para grid('numero de columnas','gap o espaciado'
 @mixin grid ($columnas, $gap ) {
     display: grid; 
-    grid-template-columns: repeat($columnas,1fr);
-    gap: 5rem;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $gap;
 }

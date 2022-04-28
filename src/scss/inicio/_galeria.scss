@@ -3,11 +3,10 @@
 
 
 .galeria{
-    @include mx.grid(2, 2rem); 
+    @include mx.grid(2, 2rem);
 
     @include mx.desktop { 
         @include mx.grid(4 ,2rem);
-        gap: 2rem;
      }
 
 .imagen{
