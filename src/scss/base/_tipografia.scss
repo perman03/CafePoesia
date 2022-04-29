@@ -29,6 +29,19 @@ h2{
         background-repeat: no-repeat;
     }
 }
+
+
+.heading-blanco{
+    @extend h2;             //comando para heredar los atributos de h2. Puede heredar clases e id
+    color: v.$blanco;
+    
+    span{
+        color: v.$blanco;
+    }
+    &::after{
+        display: none;
+    }
+}
 h3{
     font-size: 3.2rem;
 }
