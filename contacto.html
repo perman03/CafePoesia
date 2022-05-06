@@ -46,6 +46,49 @@
 
     <main class="contenedor contenido-principal">
 
+            <h2><span>Realiza una</span>Reservación</h2>
+
+            <div class="contenido-contacto">
+                <form class="formulario" action="">
+
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Escribe tu email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="personas">Número de personas:</label>
+                        <select name="" id="personas" placeholder="Indica cuántas personas vienen contigo">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="+4">+4</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="hora">Horario:</label>
+                        <input type="time" name="hora" id="hora" min="09:00" max="18:00">
+                    </div>
+
+                    <div class="campo">
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" name="hora" id="fecha">
+                    </div>
+
+                    <div class="campo">
+                        <input type="submit" value="Envíar">
+                    </div>
+
+
+                </form>
+            </div>
         
     </main>
 

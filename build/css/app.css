@@ -855,3 +855,48 @@ h3 {
 .proceso-cafe .texto p {
   margin: 1.6rem 0;
 }
+
+.contenido-contacto {
+  background-size: 40%;
+}
+@media (min-width: 768px) {
+  .contenido-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    background-image: url(/build/img/granos_cafe.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+}
+
+.formulario .campo {
+  margin-bottom: 2rem;
+}
+.formulario .campo:last-of-type {
+  margin-bottom: 0;
+}
+.formulario .campo label {
+  text-transform: uppercase;
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.formulario .campo input:not([type=submit]), .formulario .campo select {
+  width: 100%;
+  padding: 1rem;
+  border: 0.5rem solid #5E311E;
+}
+.formulario .campo input[type=submit] {
+  background-color: #5E311E;
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  color: #FFFFFF;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.formulario .campo input[type=submit]:hover {
+  cursor: pointer;
+}
