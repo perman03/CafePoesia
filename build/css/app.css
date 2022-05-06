@@ -513,6 +513,10 @@ h3 {
   background-image: url(/build/img/header_proceso.jpg);
 }
 
+.header-contacto {
+  background-image: url(/build/img/header_contacto.jpg);
+}
+
 .nav-principal {
   display: flex;
   flex-direction: column;
@@ -536,7 +540,7 @@ h3 {
 .nav-principal a:hover {
   color: #C39C63;
 }
-.nav-principal a:activo {
+.nav-principal a.activo {
   color: #C39C63;
 }
 
