@@ -1,4 +1,4 @@
-@use 'variables' as v;
+@use '../base/variables' as v;
 
 .bg-primario{
     background-color: v.$primario ;
@@ -12,3 +12,6 @@
  .margin-negativo-10{
      margin-top: -10rem;
  }
+.padding-bottom-0{
+    padding-bottom: 0;
+}
