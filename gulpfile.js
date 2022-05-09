@@ -3,10 +3,14 @@ const { src, dest, watch, series, parallel } = require('gulp');
 const sass = require('gulp-sass') (require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer'); 
+const cssnano = require('cssnano'); 
 //Dependencias para minificar imagenes
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp'); 
-const avif = require('gulp-avif'); 
+const avif = require('gulp-avif');
+
+// Sourcemap
+const sourcemaps = require('gulp-sourcemaps'); 
 
 // Declarar tarea
 function css (done) {
@@ -14,8 +18,10 @@ function css (done) {
     //paso 1: identificar archivos 2: compilarla 3: guardarla
     
     src('src/scss/app.scss')
+        .pipe(sourcemaps.init())
         .pipe( sass({ outputStyle: 'expanded' }) )  //minificar o expandir
-        .pipe( postcss([ autoprefixer() ]))         //para dar soporte a otros navegadores
+        .pipe( postcss([ autoprefixer(), cssnano() ]))         //para dar soporte a otros navegadores
+        .pipe(sourcemaps.write('.'))
         .pipe( dest('build/css') ) 
 
     done(); 
