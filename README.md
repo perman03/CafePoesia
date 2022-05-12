@@ -16,3 +16,6 @@ which has different internal pages that the user can visit, including a form.
 
 Link:
 https://cafe-poesia.netlify.app/
+
+![image](https://user-images.githubusercontent.com/83793611/168157403-5b156895-c8c7-4372-93f7-f2539eaaf0ea.png)
+
