@@ -1,7 +1,7 @@
 # Cafepoesia
 
 
-Hola, ¿qué tal? 
+Hola, me da mucho gusto saludarte
 
 Este es un sitio web realizado con SASS/CSS como herramienta principal y GULP para la automatización de tareas. El concepto se centra en la página de negocio de una cafetería,
 la cual tiene distintas páginas internas que el usuario podrá visitar, incluido un formulario. 🤎
