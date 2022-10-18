@@ -40,22 +40,49 @@
     }
 }
 
-//header de cada pagina
-.header-inicio{
-    background-image: url(/build/img/header_inicio.jpg);
+.no-webp .header-inicio{
+    background-image: url(../img/header_inicio.img);
 }
-.header-nosotros{
-    background-image: url(/build/img/header_nosotros.jpg);
+.webp .header-inicio{
+    background-image: url(../img/header_inicio.webp);
 }
-.header-proceso{
-    background-image: url(/build/img/header_proceso.jpg);
+
+.no-webp .header-nosotros{
+    background-image: url(../img/header_nosotros.jpg);
 }
-.header-menu{
-    background-image: url(/build/img/header_menu.jpg);
+
+.webp .header-nosotros{
+    background-image: url(../img/header_nosotros.webp);
 }
-.header-galeria{
-    background-image: url(/build/img/header_galeria.jpg);
+
+
+.no-webp .header-proceso{
+    background-image: url(../img/header_proceso.jpg);
 }
-.header-contacto{
-    background-image: url(/build/img/header_contacto.jpg);
+.webp .header-proceso{
+    background-image: url(/build/img/header_proceso.webp);
+}
+
+
+.no-webp .header-menu{
+    background-image: url(../img/header_menu.jpg);
+}
+.webp .header-menu{
+    background-image: url(../img/header_menu.webp);
+}
+
+
+.no-webp .header-galeria{
+    background-image: url(../img/header_galeria.jpg);
+}
+.webp .header-galeria{
+    background-image: url(../img/header_galeria.webp);
+}
+
+.no-webp .header-contacto{
+    background-image: url(../img/header_contacto.jpg);
+}
+
+.webp .header-contacto{
+    background-image: url(../img/header_contacto.webp);
 }
